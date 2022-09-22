@@ -19,3 +19,4 @@
 - git checkout -b branchName (creates a new branch branchName)
 - git checkout branchName (switches to branchName and prints all branches)
 - git merge 
+- git push -u origin <branch> (publishes branch)
