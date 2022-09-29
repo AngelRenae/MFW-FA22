@@ -1,0 +1,71 @@
+/*
+    UNIVERSAL
+*/
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*
+    (INDEX.HTML) DEFAULT VALUES
+*/
+
+/* DEFAULT | lil boxes */
+.card {
+    display: inline-block;
+    width: 20%;
+    border: .5rem solid pink;
+    margin: 1%;
+    vertical-align: top;
+
+    font-size: clamp(14px, 2vw, 30px);
+}
+
+/* DEFAULT | images */
+img {
+    width: 100%;
+}
+
+/* DEFAULT | links */
+a {
+    color: #0067b8;
+    text-decoration: none;
+}
+
+/* DEFAULT | link hover effects */
+a:hover {
+    text-decoration: underline;
+}
+
+/* DEFAULT | box holding the cards */
+.parent {
+    border: 1px solid green;
+}
+
+/*
+    MEDIA QUERIES
+    using desktop-first approach. when using max-width, the first media query
+    has to be the largest value since everything that comes afterwards overrides it.
+
+    if max-width:1083px came after max-width:540px, then the page wouldn't change
+    when less than 540px since the last thing you tell the page to do is adjust 
+    a certain way while it's less than 1083px.
+*/
+
+/* MEDIA QUERY | when the screen is 1083px and below */
+@media (max-width:1083px) {
+    .card {
+        width: 40%;
+        margin: 4%;
+    }
+
+}
+
+/* MEDIA QUERY | when the screen is 540px and below */
+@media (max-width:540px) {
+    .card {
+        width: 100%;
+        margin: 0;
+    }
+
+}
