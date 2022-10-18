@@ -1,0 +1,39 @@
+body {
+    background-color: pink;
+}
+
+.mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square {
+    background-color: blue;
+}
+
+.square:nth-child(odd) {
+    background-color: red;
+}
+
+
+
+/** 600 and below */
+@media (max-width: 600px) {
+    body {
+        background-color: green;
+    }
+    .desktop {
+            display: none;
+        }
+}
+
+/** 600 and above */
+@media (min-width: 600px) {
+    body {
+        background-color: purple;
+    }
+    .mobile {
+            display: none;
+    }
+}
