@@ -1,0 +1,17 @@
+$primary: red;
+$secondary: blue;
+
+h1 {
+    color: $primary;
+}
+
+p {
+    color: $secondary;
+}
+
+li {
+    color: $primary;
+}
+
+@import '_section2';
+@import '../node_modules/bootstrap/scss/boostrap';
